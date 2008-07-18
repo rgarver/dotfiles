@@ -1,14 +1,16 @@
 [user]
-	name = Ryan Bates
-	email = ryan@railscasts.com
+	name = Ryan Garver
+	email = rgarver@elctech.com
 [alias]
 	co = checkout
+	ci = commit
+	st = status
 [color]
 	diff = auto
 	status = auto
 	branch = auto
 [core]
-	excludesfile = /Users/rbates/.gitignore
+	excludesfile = /Users/rgarver/.gitignore
 	editor = mate -w
 [apply]
 	whitespace = nowarn
