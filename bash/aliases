@@ -1,7 +1,12 @@
 . ~/.zsh/aliases
 
 # changing directory to code project
-function c { cd ~/code/$1; }
+function P { cd ~/Projects/$1; }
+alias c='script/console'
+alias s='script/server'
+alias g='script/generate'
+
+alias ls='ls -G'
 
 # misc
 alias reload='. ~/.bash_profile'
