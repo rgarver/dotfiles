@@ -10,3 +10,17 @@ alias ls='ls -G'
 
 # misc
 alias reload='. ~/.bash_profile'
+
+
+vimgem() {
+  vim $GEMDIR/gems/`$(which ls) $GEMDIR/gems | grep -x $1.* | sort | tail -1`/
+}
+
+emacsgem() {
+  emacs $GEMDIR/gems/`$(which ls) $GEMDIR/gems | grep -x $1.* | sort | tail -1`/
+}
+
+mategem() {
+  mate $GEMDIR/gems/`$(which ls) $GEMDIR/gems | grep -x $1.* | sort | tail -1`/
+}
+
