@@ -1,9 +1,9 @@
 function parse_git_branch {
-  ref=$(git-symbolic-ref HEAD 2> /dev/null) || return
-  echo "("${ref#refs/heads/}")" 
+  branch=`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ / | tr -d \*`
+  echo $branch
 }
 
-export PS1="\w \$(parse_git_branch)$ "
+export PS1="\w \$(parse_git_branch)\$ "
 export LC_CTYPE=en_US.UTF-8
 export EDITOR="mate -w"
 export GEMDIR=`gem env gemdir`
