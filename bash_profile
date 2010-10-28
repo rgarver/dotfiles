@@ -6,10 +6,7 @@ source ~/.bash/config
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
-if [ -f ~/.rvm/bin/rvm ] ; then source ~/.rvm/bin/rvm ; fi
-if [ -f ~/.rvm/current ] ; then source ~/.rvm/current ; fi
-if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
 
 export ARCHFLAGS="-arch x86_64"
-
-
+export PGOPTIONS='-c client_min_messages=WARNING'
+if [[ -s /Users/rgarver/.rvm/scripts/rvm ]] ; then source /Users/rgarver/.rvm/scripts/rvm ; fi
