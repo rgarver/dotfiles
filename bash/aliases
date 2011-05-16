@@ -5,8 +5,10 @@ function P { cd ~/Projects/$1; }
 alias c='script/console'
 alias s='script/server'
 alias g='script/generate'
+alias bx='bundle exec'
 
 alias ls='ls -G'
+alias node-cli='rlwrap node-repl'
 
 # misc
 alias reload='. ~/.bash_profile'

@@ -1,10 +1,3 @@
-begin
-  require 'autotest-mac'
-rescue LoadError
-  begin
-    require 'rubygems'
-    require 'autotest-mac'
-  rescue LoadError
-    puts "Please install the autotest-mac gem for Growl support" 
-  end
-end
+require 'autotest/fsevent'
+require 'autotest/growl'
+
